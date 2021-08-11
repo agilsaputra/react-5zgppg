@@ -1,4 +1,3 @@
-import React from "react";
 import React, { Component } from 'react';
 import "./style.css";
 import { BrowserRouter as Router, Switch, Route, Redirect} from 'react-router-dom';
