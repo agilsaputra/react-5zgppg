@@ -9,10 +9,6 @@ class App extends Component{
   render(){
     return (
       <div>
-        
-        <FletchApi/>
-
-
         <Router >
            <Switch>
               <Route path="/">
@@ -23,7 +19,9 @@ class App extends Component{
              </Route>               
             </Switch>
         </Router>
-      
+        <div className="FletchApi">
+        <FletchApi/>
+      </div>
       </div>
     );
   }
