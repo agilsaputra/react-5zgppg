@@ -1,7 +1,7 @@
-h1, p {
-  font-family: Lato;
-  text-align: center;
-}
-.FletchApi {
+
+body {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  font-family: Georgia, 'Times New Roman', Times, serif;
   text-align: center;
 }
