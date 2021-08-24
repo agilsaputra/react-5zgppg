@@ -1,15 +1,26 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './header.css';
-import { Link } from 'react-router';
+import { Link } from 'react-router-dom';
+import { GoX } from "react-icons/go";
 import { GoThreeBars } from "react-icons/go";
 
-const header = () => {
+function header () {
+  const [click, setClick] = useState (false)
+
+  const handleClick =() => setClick (!click)
+  
+
   return (
-    <div className="header">
-      <a href="#">Nike</a>
-      <div className="bar"> <GoThreeBars /></div>
-      <h2 className="bar">Nike</h2> 
-    </div>
+    <nav className="header">
+     <Link to ='/' clasName ="header-logo">
+       Nike
+     </Link>
+     
+     <div className="menu" onClick={handleClick}> 
+      <i className={click ?<GoThreeBars/> : <GoX/>}/>
+     </div>
+    
+    </nav>
   );
 };
 

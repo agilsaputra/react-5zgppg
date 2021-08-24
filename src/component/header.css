@@ -11,8 +11,9 @@ h2 {
   color: white;
   padding: 10px;
 }
-.bar h2 {
+.menu {
   position: absolute;
   top: 8px;
   right: 16px;
+  padding: 10px ;
 }
