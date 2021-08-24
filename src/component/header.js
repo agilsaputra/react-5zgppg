@@ -16,10 +16,11 @@ function header () {
        Nike
      </Link>
      
-     <div className="menu" onClick={handleClick}> 
-      <i className={click ?<GoThreeBars/> : <GoX/>}/>
-     </div>
     
+     <div className="menu" > 
+      {click ? <GoThreeBars color="white" onClick={handleClick} /> 
+              : <GoX color="white"onClick={handleClick} />}
+      </div>
     </nav>
   );
 };
