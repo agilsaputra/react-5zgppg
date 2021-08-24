@@ -4,24 +4,26 @@ import { BrowserRouter as Router, Switch, Route, Redirect} from 'react-router-do
 import Home from "./component/home";
 import Login from "./component/login";
 import FletchApi from "./component/FletchApi" ;
+import Header from "./component/header" ;
+
 
 class App extends Component{ 
   render(){
-    return (
+    return (     
       <div>
+      
+      <div> <Header/></div>
+      
         <Router >
            <Switch>
               <Route path="/">
-                 <Home/>
+              
              </Route>     
              <Route path="/Login" >
                  <Login/>
              </Route>               
             </Switch>
         </Router>
-        <div className="FletchApi">
-        <FletchApi/>
-      </div>
       </div>
     );
   }
