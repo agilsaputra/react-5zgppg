@@ -17,3 +17,10 @@ h2 {
   right: 16px;
   padding: 10px ;
 }
+
+.normal {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  font-size: 20px;
+}
